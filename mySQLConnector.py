@@ -20,7 +20,7 @@ csv_fact=csv.reader(open(r'C:\Users\hp\Desktop\Mini-Project\Source Data\Group 6\
 header=next(csv_fact)
 
 
-# Fact policy table already created in mySQL
+# Dim product table already created in mySQL
 
 # Inserts data into dim product table
 for row in csv_fact:
