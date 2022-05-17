@@ -1,7 +1,7 @@
 import mysql.connector
 import csv
 
-conn=mysql.connector.connect(host="127.0.0.1",user="root",passwd="Pravin97@vp",database="test_db")
+conn=mysql.connector.connect(host="127.0.0.1",user="root",passwd="Pravin97@vp",database="dbo")
 cur=conn.cursor()
 
 # Reads the first csv file - Dim policy
