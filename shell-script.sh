@@ -1,6 +1,6 @@
-echo 'mysql-u root -pPravin97@vp -h xxx.x.x.x < /home/pravin/sample/dim_policy.sql'
+echo 'mysql-u root -p****** -h xxx.x.x.x < /home/pravin/sample/dim_policy.sql'
 
-echo 'mysql-u root -pPravin97@vp -h xxx.x.x.x < /home/pravin/sample/dim_product.sql'
+echo 'mysql-u root -p****** -h xxx.x.x.x < /home/pravin/sample/dim_product.sql'
 
 echo  `aws configure set aws_access_key_id default_access_key`
 echo  `aws configure set aws_secret_access_key default_secret_key`
