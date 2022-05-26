@@ -1,4 +1,4 @@
-# Stored procedure to create an aggregate table in snowflake
+-- Stored procedure to create an aggregate table in snowflake
 
 CREATE OR REPLACE PROCEDURE PROJECT_DB.LOADED_TABLES."FACT_CLAIM_AGG_SP"()
 RETURNS NUMBER(38,0)
