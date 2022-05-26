@@ -1,11 +1,11 @@
 import mysql.connector
 import csv
 
-conn=mysql.connector.connect(host="127.0.0.1",user="root",passwd="Pravin97@vp",database="dbo")
+conn=mysql.connector.connect(host="hostname",user="user",passwd="password",database="database_name")
 cur=conn.cursor()
 
 # Reads the first csv file - Dim policy
-csv_dim_policy=csv.reader(open(r'C:\Users\hp\Desktop\Mini-Project\Source Data\Group 6\DIM_POLICY_202202251455.csv'))
+csv_dim_policy=csv.reader(open(r'file path'))
 header=next(csv_dim_policy)
 
 # Dim policy table already created in mySQL
@@ -16,7 +16,7 @@ for row in csv_dim_policy:
 conn.commit()
 
 # Reads the second csv file - Dim Product
-csv_dim_products=csv.reader(open(r'C:\Users\hp\Desktop\Mini-Project\Source Data\Group 6\DIM_PRODUCT_202202281254.csv'))
+csv_dim_products=csv.reader(open(r'file_path'))
 header=next(csv_dim_products)
 
 
