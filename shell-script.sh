@@ -1,9 +1,8 @@
-echo 'mysql-u root -p****** -h xxx.x.x.x < /home/pravin/sample/dim_policy.sql'
+$ touch aws_credentials_and_upload_data_into_s3.sh
+$ vi aws_credentials_and_upload_data_into_s3.sh
 
-echo 'mysql-u root -p****** -h xxx.x.x.x < /home/pravin/sample/dim_product.sql'
+echo  `aws configure set aws_access_key_id aws-access-id`
+echo  `aws configure set aws_secret_access_key aws-secret-key`
+echo  `aws configure set default.region aws-region`
 
-echo  `aws configure set aws_access_key_id default_access_key`
-echo  `aws configure set aws_secret_access_key default_secret_key`
-echo  `aws configure set default.region us-east-1`
-
-echo `aws s3 sync "/mnt/c/ProgramData/mysql/MySql server 8.0" s3://test-bucket-snowflake-lab/ --region "us-east-1"`
+echo `aws s3 sync "/mnt/file-path" s3://mini-project-s3-raw-bucket/ --region "aws-region"`
