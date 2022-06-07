@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     #snowflake-Credentials
     pravin=[os.environ['uname_pravin'],os.environ['password_pravin'],os.environ['uid_pravin']]
     shaunak=[os.environ['uname_shaunak'],os.environ['password_shaunak'],os.environ['uid_shaunak']]
-    abi=[os.environ['uname_shaunak'],os.environ['password_shaunak'],os.environ['uid_shaunak']]
+    abi=[os.environ['uname_abhishek'],os.environ['password_abhishek'],os.environ['uid_abhishek']]
     l1=[pravin,shaunak,abi]
     
     
